@@ -1,0 +1,31 @@
+# .gitignore file
+
+# Ignore files and directories inside the 'server' folder
+
+.idea/
+.vscode/
+.env
+env*/
+__pycache__/
+dist/
+.coverage*
+htmlcov/
+.tox/
+docs/_build/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env/
+env/
+.env.*
+
+# IDEs
+.idea/
+.vscode/
+
+# Testing
+.tox/

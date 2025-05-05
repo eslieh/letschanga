@@ -1,0 +1,145 @@
+
+.auth-container {
+    display: flex
+;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-info {
+    background: linear-gradient(118deg, #023023, #1c441e);
+    height: 100%;
+    width: 50%;
+    display: grid
+;
+    place-content: center;
+}
+
+.auth-card {
+    width: 50%;
+    background: white;
+    height: 100%;
+    color: black;
+    padding: 4em;
+    align-items: center;
+    display: grid
+;
+}
+
+.step-indicators {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+.step {
+    width: 31px;
+    height: 31px;
+    display: grid
+;
+    place-content: center;
+    border-radius: 30px;
+}
+.step.active{
+
+    color: white;
+    background: #19421ff2;
+}
+.auth-header {
+    display: grid
+;
+    text-align: center;
+}
+
+p.step-description {
+    margin-top: 11px;
+    font-weight: 500;
+}
+
+.auth-form {
+    box-shadow: 0 0 11px #80808059;
+    padding: 24px;
+    display: grid
+;
+    gap: 7px;
+    border-radius: 31px;
+    background: #80808003;
+}
+
+button.btn-primary {
+    background: linear-gradient(118deg, #023023eb, #1c441e);
+}
+
+.input-icon-wrapper {
+    display: flex
+;
+    align-items: center;
+}
+.input-icon-wrapper i {
+    position: absolute;
+    margin-left: 7px;
+}
+
+.input-icon-wrapper input {
+    background: transparent;
+    color: inherit;
+    padding: 8px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #80808070;
+    padding-left: 27px;
+}
+p.password-hint {
+    color: gray;
+    font-size: 12px;
+}
+input#verificationCode {
+    background: transparent;
+    color: inherit;
+    padding: 8px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #80808070;
+    padding-left: 27px;
+}
+.auth-footer button {
+    background: linear-gradient(118deg, #023023eb, #1c441e);
+}
+.image-placeholder i {
+    background: #80808073;
+    padding: 2em;
+    border-radius: 6em;
+    color: white;
+}
+label.upload-btn {
+    display: flex
+;
+    text-align: center;
+    gap: 6px;
+    align-items: center;
+}
+p.profile-subtitle {
+    font-size: 13px;
+    text-align: center;
+}
+.auth-form h2 {
+    text-align: center;
+}
+
+.profile-image-upload {
+    display: grid
+;
+    place-content: center;
+}.image-placeholder {
+    text-align: center;
+}
+.form-group textarea {
+    background: transparent;
+    color: inherit;
+    padding: 8px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #80808070;
+}

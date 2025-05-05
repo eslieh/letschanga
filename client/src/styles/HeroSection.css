@@ -1,0 +1,251 @@
+.hero {
+  color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(118deg, #023023, #1c441e);
+}
+
+button.login_btn {
+  color: black;
+  background: white;
+}
+
+section.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+}
+.icon-branding {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.zero {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 26px;
+  color: transparent;
+}
+
+span.brand-name {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+span.cjc {
+  color: yellow;
+}
+
+section.name-places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+  height: 100%;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+section.whatwedo {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: relative;
+  color: #000;
+  top: 100vh;
+  border-radius: 28px 28px 1px 1px;
+  box-shadow: none;
+}
+
+.diagram-place {
+  width: 32%;
+  text-align: center;
+  font-size: 24em;
+}
+.name-places {
+  display: grid;
+  padding-left: 40px;
+  gap: 3px;
+}
+
+span.taxt-phrse1 {
+  display: flex;
+  gap: 3px;
+  font-weight: 600;
+  font-size: 4em;
+  flex-wrap: wrap;
+}
+
+.grey-blurt {
+  color: gray;
+  font-weight: 300;
+}
+span.text-phrase2 {
+  display: flex;
+  gap: 3px;
+  font-weight: 600;
+  font-size: 5em;
+  margin-top: -27px;
+}
+button.click-donate {
+  border: none;
+  background: no-repeat;
+  font-size: 1em;
+  color: yellow;
+}
+
+
+
+section.whatwedo {
+    padding: 42px;
+    text-align: center;
+}
+
+h2.fo_individuals {
+    font-size: 2.2em;
+}
+
+h3.subtitle {
+    color: #454545;
+}
+
+ul.bentsk {
+    text-align: start;
+    display: grid
+;
+    gap: 6px;
+}
+
+.dividers {
+    display: grid
+;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+    height: 92%;
+    align-items: center;
+    justify-content: center;
+}
+
+section#fund {
+    border-radius: 0;
+    background: #053223;
+    color: white;
+}
+
+.image-place-hs img {
+    width: 100%;
+    height: 46vh;
+    border-radius: 36px;
+    object-fit: cover;
+}
+
+
+.impacts-jkd {
+    background: transparent;
+    padding: 42px;
+    padding-left: 3.5em;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 6em;
+    margin-right: -4em;
+    backdrop-filter: blur(51px);
+    box-shadow: -6px 3px 12px #8080802e;
+}
+
+@media screen and (max-width: 600px)  {
+    
+span.taxt-phrse1 {
+    display: flex
+;
+    gap: 3px;
+    font-weight: 600;
+    font-size: 2em;
+    flex-wrap: wrap;
+}
+
+.dolla {
+    display: none;
+}
+section.name-places {
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    height: 200vh;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+span.brand-name {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+span.taxt-phrse1 {
+    display: flex
+;
+    gap: 3px;
+    font-weight: 600;
+    font-size: 1.4em;
+    flex-wrap: wrap;
+}
+span.text-phrase2 {
+    display: flex
+;
+    gap: 3px;
+    font-weight: 600;
+    font-size: 2.1em;
+    margin-top: -13px;
+}
+button.click-donate {
+    border: none;
+    background: no-repeat;
+    font-size: 1em;
+    color: yellow;
+    margin-left: -28px;
+}
+h2.fo_individuals {
+    font-size: 1.3em;
+}
+.dividers {
+    display: grid
+;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+    height: 97%;
+    align-items: center;
+    justify-content: center;
+}
+.impacts-jkd {
+    background: transparent;
+    padding: 20px;
+    padding-left: 62px;
+    border-radius: 30px;
+    margin-left: -5em;
+    position: relative;
+    margin-top: 16px;
+    backdrop-filter: blur(77px);
+    box-shadow: -4px 0px 49px #8080802e;
+    font-size: 13px;
+    width: 100%;
+    -webkit-backdrop-filter: blur(77px);
+}
+.image-place-hs img {
+    width: 100%;
+    height: 46vh;
+    border-radius: 36px;
+    object-fit: cover;
+    margin-top: -15em;
+}
+section.whatwedo {
+    padding: 42px;
+    text-align: center;
+    height: 134vh;
+}
+}
