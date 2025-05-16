@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/HeroSection.css";
+import { useNavigate } from "react-router-dom";
+
 const benefits = {
   individuals: {
     title: "For Individuals (Donors)",
@@ -40,7 +42,8 @@ const benefits = {
   },
 };
 
-const HeroSection = () => {
+export default function HeroSection(){
+    const navigate = useNavigate()  
   return (
     <div className="hero-page">
       <section className="hero">
@@ -52,7 +55,7 @@ const HeroSection = () => {
             </span>
           </div>
           <div className="login-placce">
-            <button className="login_btn">Login</button>
+            <button className="login_btn" onClick={() => navigate('/auth')}>Login</button>
           </div>
         </section>
         <section className="name-places">
@@ -126,4 +129,3 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;

@@ -46,6 +46,9 @@ class UserProfileResource(Resource):
         if not user:
             return {"message": "User not found"}, 404
 
+        # updates = {}
+        if "image_url" in data:
+            user.image = data["image_url"]
         if user.user_info:
             return {"message": "User info already exists. Use PATCH to update."}, 400
 
@@ -53,6 +56,8 @@ class UserProfileResource(Resource):
         if not all(k in data for k in ('tagline', 'bio')):
             return {"message": "Missing required fields"}, 400
 
+        
+        
         new_info = UserInfo(
             user_id=user_id,
             tagline=data['tagline'],

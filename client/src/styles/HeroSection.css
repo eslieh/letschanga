@@ -9,15 +9,16 @@ button.login_btn {
   color: black;
   background: white;
 }
-
 section.header {
-  display: flex;
+  display: flex
+;
   align-items: center;
   justify-content: space-between;
   padding: 14px;
   position: absolute;
   width: 100%;
   height: fit-content;
+  z-index: 500;
 }
 .icon-branding {
   display: flex;

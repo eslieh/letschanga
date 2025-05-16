@@ -20,6 +20,7 @@ from resources.auth_resource import SignupResource, VerifyOTPResource, LoginReso
 from resources.my_fundraiser_resource import FundraiserListResource, FundraiserResource
 from resources.user_resource import UserProfileResource
 from resources.test_donate import TestDonations
+from resources.upload_media_resource import ImageUploadResource
 from resources.donate_resource import Donate_resource, Donatio_callBack
 # Load environment variables from .efnv file
 load_dotenv()
@@ -136,6 +137,9 @@ def create_app():
     api.add_resource(Donatio_callBack, "/api/callback/mpesa/donation")
     # test donation and withdraw
     api.add_resource(TestDonations, '/api/test/donate')
+    
+    # upload media resource 
+    api.add_resource(ImageUploadResource, '/api/media/upload')
     return app
 
 # Run the app using Flask-SocketIO if this file is run directly

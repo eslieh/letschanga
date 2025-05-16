@@ -31,10 +31,6 @@ class HandleDonation():
             fundraiser.current_amount += amount
             db.session.commit()
             user_id=fundraiser.user_id     
-            
-            
-            
-        
             print("creating ledger")
             status = "completed"
             # create a ledger for that donation

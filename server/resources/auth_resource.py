@@ -245,7 +245,11 @@ class ResendOTPResource(Resource):
 
     def _send_otp_email(self, email: str, otp: str) -> None:
         """Send OTP email using Resend service"""
+        resend_api_key = current_app.config["RESEND_API_KEY"]
+        resend.api_key = resend_api_key
+        print(resend_api_key)
         try:
+            
             resend.Emails.send({
                 "from": "Grnder <onboarding@grnder.fueldash.net>",
                 "to": [email],
@@ -316,7 +320,9 @@ class ForgotPasswordResource(Resource):
         """Send password reset email with frontend URL"""
         frontend_url = current_app.config['FRONTEND_URL']
         reset_url = f"{frontend_url}reset-password?token={token}"
-
+        resend_api_key = current_app.config["RESEND_API_KEY"]
+        resend.api_key = resend_api_key
+        print(resend_api_key)
         try:
             resend.Emails.send({
                 "from": "Grnder <onboarding@grnder.fueldash.net>",
